@@ -1,0 +1,19 @@
+package _10pr._2ex;
+
+public class ChairFactory implements AbstractChairFactory {
+
+    @Override
+    public VictorianChair createVictorianChair() {
+        return new VictorianChair(1857);
+    }
+
+    @Override
+    public MagicChair createMagicChair() {
+        return new MagicChair();
+    }
+
+    @Override
+    public FunctionalChair createFunctionalChair() {
+        return new FunctionalChair();
+    }
+}
