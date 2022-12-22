@@ -23,7 +23,7 @@ public class Tester {
 //Задание 1
        /*Date dateBegin = new Date(2022, 9, 25, 13, 10);
         Date dateEnd = new Date();
-        System.out.print("Мишкин Артём:\n    Дата получения работы: " + dateBegin.toString()
+        System.out.print("Куличенко Александр:\n    Дата получения работы: " + dateBegin.toString()
                 + "\n    Дата завершения работы: " + dateEnd.toString());*/
 //Задание 2
         /*Scanner scan = new Scanner(System.in);
