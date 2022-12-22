@@ -1,5 +1,4 @@
-import
-        javax.swing.*;
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -47,7 +46,7 @@ public class GraphicCalculator extends JFrame implements ActionListener {
         mainPanel.add(ButtonOperations);
 
         frame.add(mainPanel);
-        frame.setSize(400, 200);
+        frame.setSize(1080, 720);
         frame.setVisible(true);
     }
 
@@ -84,9 +83,9 @@ public class GraphicCalculator extends JFrame implements ActionListener {
                         case "/" -> Integer.parseInt(a) / Integer.parseInt(b);
                         default -> Integer.parseInt(a) * Integer.parseInt(b);
                     };
-                    a = String.valueOf(res);
-                    result.setText(a);
-                    operation = b = "";
+            a = String.valueOf(res);
+            result.setText(a);
+            operation = b = "";
         }
         else
         {

@@ -75,27 +75,27 @@ public class RPN_Calculator
                 stack.push(Double.parseDouble(operand));
                 operand = new String();
             }
-             if(GetPriority(rpn.charAt(i)) > 1)
-             {
-                 double a = stack.pop();
-                 double b = stack.pop();
-                 if (rpn.charAt(i) == '+')
-                 {
-                     stack.push(b + a);
-                 }
-                 if (rpn.charAt(i) == '-')
-                 {
-                     stack.push(b + a);
-                 }
-                 if (rpn.charAt(i) == '*')
-                 {
-                     stack.push(b * a);
-                 }
-                 if (rpn.charAt(i) == '/')
-                 {
-                     stack.push(b / a);
-                 }
-             }
+            if(GetPriority(rpn.charAt(i)) > 1)
+            {
+                double a = stack.pop();
+                double b = stack.pop();
+                if (rpn.charAt(i) == '+')
+                {
+                    stack.push(b + a);
+                }
+                if (rpn.charAt(i) == '-')
+                {
+                    stack.push(b + a);
+                }
+                if (rpn.charAt(i) == '*')
+                {
+                    stack.push(b * a);
+                }
+                if (rpn.charAt(i) == '/')
+                {
+                    stack.push(b / a);
+                }
+            }
         }
         return stack.pop();
     }
